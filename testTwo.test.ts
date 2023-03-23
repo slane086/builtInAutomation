@@ -7,6 +7,7 @@ const fs = require('fs')
 test("", async () => {
     await page.navigate()
     await page.driver.manage().window().maximize();
+    await page.click(page.expertiseBtn)
     await page.driver.sleep(3000);
     await fs.writeFile(`${__dirname}/IrishCoffee.png`,
     await page.driver.takeScreenshot(), "base64", 
