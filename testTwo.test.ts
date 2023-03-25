@@ -4,12 +4,14 @@ import { builtIn } from "./pageObjects";
 const page = new builtIn()
 const fs = require('fs')
 
-test("", async () => {
+describe('builtIn solo project', () => {
+test("Will search for Remote Jobs on the builtIn website", async () => {
     await page.navigate()
     await page.driver.manage().window().maximize();
-    await page.click(page.expertiseBtn)
     await page.driver.sleep(3000);
-    await fs.writeFile(`${__dirname}/IrishCoffee.png`,
+    await page.click(page.searchBtn)
+    await page.driver.sleep(3000);
+    await fs.writeFile(`${__dirname}/RemoteJobs.png`,
     await page.driver.takeScreenshot(), "base64", 
     (e) => {
         if (e) console.error(e)
@@ -17,3 +19,4 @@ test("", async () => {
     })
     await page.driver.quit()
 });
+})
