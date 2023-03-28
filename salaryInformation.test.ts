@@ -5,7 +5,7 @@ const page = new builtIn()
 const fs = require('fs')
 
 describe('builtIn solo project', ()=> {
-test("", async () => {
+test("should look at the salary information and take a screenshot", async () => {
     await page.navigate()
     await page.driver.manage().window().maximize();
     await page.click(page.growSkillsBtn)

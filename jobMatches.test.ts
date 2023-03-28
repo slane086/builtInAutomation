@@ -5,10 +5,10 @@ const page = new builtIn()
 const fs = require('fs')
 
 describe('builtIn Solo Project', () =>{
-test("Will it select the job, years of experience and look at the jobs", async () => {
+test("Will it select the job, years of experience and look at the jobs, and take a screenshot", async () => {
     await page.navigate()
     await page.driver.manage().window().maximize();
-    await page.click(page.jobCategory);
+    await page.click(page.jobCategoryHomeBtn);
     await page.click(page.designUX);
     await page.driver.sleep(3000)
     await page.click(page.yearOfExperienceBtn);

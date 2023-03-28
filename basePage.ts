@@ -47,4 +47,10 @@ async getAttribute(elementBy: By, attribute: string) {
     return (await this.getElement(elementBy)).getAttribute(attribute)
 }
 
+async sendKeys(elementBy: By, keys) {
+    await this.driver.wait(until.elementLocated(elementBy))
+    return this.driver.findElement(elementBy).sendKeys(keys)
+}
+
+
 }
