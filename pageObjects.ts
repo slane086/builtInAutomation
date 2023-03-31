@@ -67,12 +67,12 @@ export class builtIn extends BasePage {
 
 
 
-    // TESTTWO
+    // qaleadjob
     searchBtn: By = By.xpath('//button[@class="menu-search"]')
     // search button
 
     viewAllJobs: By = By.xpath('(//div[@class="search-results search-results-all-results"])')
-    // input bar for the search option
+    // view all jobs button
 
     jobCategorySearch: By = By.xpath('(//button[@class="bix-dropdown-trigger"])[3]')
     // job category selector for the search jobs page
@@ -105,14 +105,18 @@ export class builtIn extends BasePage {
 
     // NONUSED SELECTORS
     
-    // buffaloBtn: By = By.xpath('(//span[@class="item-title"])[11]')
-    // this is to select the buffaloNY button
-    // cryptoBtn: By = By.xpath('(//button[@class="toggle-selection-button"])[105]')
-    // this is to select the crypto button
-    // industryBtn: By = By.xpath('(//button[@class="bix-dropdown-trigger active"])[2]')
-    // this is to select the industry button
-    // perksbtn: By = By.xpath('(//button[@class="bix-dropdown-trigger"])[5]')
-    // this is to select the perks button
+    searchBar: By = By.xpath('(//input[@class="search-input"])')
+    // this is for the search bar to search for items
+
+    searchAllJobs: By = By.xpath('(//a[@class="jobs-board-link"])')
+    // this is to select the found in jobs button when searching for a job
+
+    internshipButton: By = By.xpath('(//button[@class="toggle-selection-button"])[38]')
+    // this is to select the internships button
+
+    internshipJob: By = By.xpath('(//a[@class="job-details-link"])[2]')
+    // this is to select the internship job available
+    
     // beerPerk: By = By.xpath('(//span[@class="item-title"])[87]')
     // this is to select the beer perk option
     // gamePerk: By = By.xpath('(//span[@class="item-title"])[109]')

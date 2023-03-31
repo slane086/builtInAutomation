@@ -5,7 +5,7 @@ const page = new builtIn()
 const fs = require('fs')
 
 describe('builtIn solo project', () => {
-test("Will search for Remote Jobs on the builtIn website", async () => {
+test("Will search for jobs and set a criteria and take screenshot of result ", async () => {
     await page.navigate()
     await page.driver.manage().window().maximize();
     await page.driver.sleep(3000);
@@ -31,4 +31,4 @@ test("Will search for Remote Jobs on the builtIn website", async () => {
     })
     await page.driver.quit()
 });
-})
+});

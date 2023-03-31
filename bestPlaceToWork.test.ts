@@ -12,7 +12,7 @@ test("should look at the best places to work page and take a screenshot", async 
     await page.driver.sleep(3000);
     await page.click(page.clearBtn);
     await page.click(page.bestPlacesToWork);
-    await fs.writeFile(`${__dirname}/salaryinfo.png`,
+    await fs.writeFile(`${__dirname}/bestwork.png`,
     await page.driver.takeScreenshot(), "base64", 
     (e) => {
         if (e) console.error(e)
