@@ -101,10 +101,7 @@ export class builtIn extends BasePage {
     saveJobBtn: By = By.xpath('(//a[@class="ga-event-processed"])[1]')
     // this is for the save job button on epic games for the qa lead
 
-
-
-    // NONUSED SELECTORS
-    
+    // INTERNSHIPJOBTEST
     searchBar: By = By.xpath('(//input[@class="search-input"])')
     // this is for the search bar to search for items
 
@@ -116,6 +113,10 @@ export class builtIn extends BasePage {
 
     internshipJob: By = By.xpath('(//a[@class="job-details-link"])[2]')
     // this is to select the internship job available
+
+
+
+    // NONUSED SELECTORS
     
     // beerPerk: By = By.xpath('(//span[@class="item-title"])[87]')
     // this is to select the beer perk option
